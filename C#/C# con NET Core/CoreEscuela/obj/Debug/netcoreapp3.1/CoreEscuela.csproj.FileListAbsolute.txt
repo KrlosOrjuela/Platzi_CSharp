@@ -1,0 +1,13 @@
+D:\GitHub\C#\CoreEscuela\bin\Debug\netcoreapp3.1\CoreEscuela.exe
+D:\GitHub\C#\CoreEscuela\bin\Debug\netcoreapp3.1\CoreEscuela.deps.json
+D:\GitHub\C#\CoreEscuela\bin\Debug\netcoreapp3.1\CoreEscuela.runtimeconfig.json
+D:\GitHub\C#\CoreEscuela\bin\Debug\netcoreapp3.1\CoreEscuela.runtimeconfig.dev.json
+D:\GitHub\C#\CoreEscuela\bin\Debug\netcoreapp3.1\CoreEscuela.dll
+D:\GitHub\C#\CoreEscuela\bin\Debug\netcoreapp3.1\CoreEscuela.pdb
+D:\GitHub\C#\CoreEscuela\obj\Debug\netcoreapp3.1\CoreEscuela.csprojAssemblyReference.cache
+D:\GitHub\C#\CoreEscuela\obj\Debug\netcoreapp3.1\CoreEscuela.csproj.CoreCompileInputs.cache
+D:\GitHub\C#\CoreEscuela\obj\Debug\netcoreapp3.1\CoreEscuela.AssemblyInfoInputs.cache
+D:\GitHub\C#\CoreEscuela\obj\Debug\netcoreapp3.1\CoreEscuela.AssemblyInfo.cs
+D:\GitHub\C#\CoreEscuela\obj\Debug\netcoreapp3.1\CoreEscuela.dll
+D:\GitHub\C#\CoreEscuela\obj\Debug\netcoreapp3.1\CoreEscuela.pdb
+D:\GitHub\C#\CoreEscuela\obj\Debug\netcoreapp3.1\CoreEscuela.genruntimeconfig.cache
