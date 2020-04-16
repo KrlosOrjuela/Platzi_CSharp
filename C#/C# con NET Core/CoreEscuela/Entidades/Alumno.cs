@@ -1,9 +1,10 @@
 namespace CoreEscuela.Entidades
 {
     using System;
+    using CoreEscuela.Entidades.ClasesPadre;
     
     public class Alumno: EnteSistema
-    {
-        public Alumno() => (this.Id) = (Guid.NewGuid().ToString());   
+    { 
+        
     }
 }

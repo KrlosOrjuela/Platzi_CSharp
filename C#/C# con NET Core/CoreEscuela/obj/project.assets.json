@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\C#\\CoreEscuela\\CoreEscuela.csproj",
+      "projectUniqueName": "D:\\GitHub\\C#\\C# con NET Core\\CoreEscuela\\CoreEscuela.csproj",
       "projectName": "CoreEscuela",
-      "projectPath": "D:\\GitHub\\C#\\CoreEscuela\\CoreEscuela.csproj",
+      "projectPath": "D:\\GitHub\\C#\\C# con NET Core\\CoreEscuela\\CoreEscuela.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\C#\\CoreEscuela\\obj\\",
+      "outputPath": "D:\\GitHub\\C#\\C# con NET Core\\CoreEscuela\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

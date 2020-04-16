@@ -2,6 +2,7 @@ namespace CoreEscuela.Entidades
 {
     using System;
     using System.Collections.Generic;
+    using CoreEscuela.Entidades.ClasesPadre;
 
     public class Curso: EnteSistema
     {
@@ -13,6 +14,7 @@ namespace CoreEscuela.Entidades
 
         public List<Evaluacion> Evaluaciones { get; set; }
 
-        public Curso() => (this.Id) = (Guid.NewGuid().ToString());       
+        
+     
     }
 }

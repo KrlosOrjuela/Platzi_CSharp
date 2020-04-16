@@ -4,7 +4,9 @@ namespace CoreEscuela.App
     using System.Collections.Generic;
     using System.Linq;
     using CoreEscuela.Entidades;
-    public class EscuelaEngine
+
+    /// la palabra clave **sealed** define que dicha clase no puede ser heredada, pero si instanciada.
+    public sealed class EscuelaEngine
     {
         public Escuela Escuela { get; set; }
 
@@ -106,5 +108,6 @@ namespace CoreEscuela.App
 
             return listEvaluaciones;
         }
+
     }
 }

@@ -1,6 +1,7 @@
 namespace CoreEscuela.Entidades
 {
     using System;
+    using CoreEscuela.Entidades.ClasesPadre;
     
     public class Evaluacion: EnteSistema
     {
@@ -8,8 +9,14 @@ namespace CoreEscuela.Entidades
 
          public Asignatura Asignatura { get; set; }
 
-         public float Nota { get; set; }
+         public float Nota { get; set; } 
 
-        public Evaluacion() => (this.Id) = (Guid.NewGuid().ToString());   
+
+        /// Esto me permite, que en el moemtnop de depuración, al revisar el objeto, pueda ver rapidamente estos datos retornados 
+        public override string ToString()
+        {
+            return $"{this.Nota}, {this.Alumno.Nombre}, {this.Asignatura.Nombre}";
+        } 
     }
+    
 }

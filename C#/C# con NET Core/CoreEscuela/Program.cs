@@ -5,6 +5,8 @@
     using System.Linq;
     using CoreEscuela.App;
     using CoreEscuela.Entidades;
+    using CoreEscuela.Utilidades;
+
 
     class Program
     {
@@ -12,7 +14,25 @@
         {
             var coreEscuela = new EscuelaEngine();
             coreEscuela.Inicializar();
-            ImprimirEscuelas(coreEscuela.Escuela);
+             ImprimirEscuelas(coreEscuela.Escuela);
+
+            Imprimir.ImprimirLineaEnConsola(20);
+            Imprimir.ImprimirTituloEnConsola("Pruebas Polimorfismo");
+
+            var alumnoTest = new Alumno() { Nombre = "Carlo Amaya" };
+            var objSistema = alumnoTest;
+
+            Imprimir.ImprimirTituloEnConsola("Alumno");
+            Console.WriteLine($"Nombre Alumno: {alumnoTest.Nombre}");
+            Console.WriteLine($"Id Alumno: {alumnoTest.Id}");
+            Console.WriteLine($"Id objSistema: {alumnoTest.GetType()}");
+
+
+            Imprimir.ImprimirTituloEnConsola("objSistema");
+            Console.WriteLine($"Nombre objSistema: {objSistema.Nombre}");
+            Console.WriteLine($"Id objSistema: {objSistema.Id}");
+            Console.WriteLine($"Id objSistema: {objSistema.GetType()}");
+
         }
 
         private static bool Predicate(Curso curso)
@@ -56,7 +76,7 @@
                 {
                     Console.WriteLine($"===============  {evaluacion.Alumno.Nombre.ToUpper()}  =================");
                 }
-                                
+
                 Console.WriteLine($"Nombre: {evaluacion.Nombre}, Alumno: {evaluacion.Alumno.Nombre}, Asignatura: {evaluacion.Asignatura.Nombre}, Nota: {evaluacion.Nota}");
 
                 alumnoActual = evaluacion.Alumno.Nombre;

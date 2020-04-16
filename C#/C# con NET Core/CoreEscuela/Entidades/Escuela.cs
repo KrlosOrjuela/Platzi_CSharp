@@ -1,18 +1,10 @@
 namespace CoreEscuela.Entidades
 {
     using System.Collections.Generic;
+    using CoreEscuela.Entidades.ClasesPadre;
 
-    public class Escuela
+    public class Escuela: EnteSistema
     {
-        /// Atributo que representa el nombre de una Escuela
-        private string _nombre;
-
-        /// Propiedad que encapsula el nombre de la escuela para que no sea expuesto publicamente
-        public string Nombre { 
-            get{return "Copia: "+ this._nombre;}
-            set{this._nombre = value.ToUpper();}
-        }
-
         /// Obtiene o establece el año de creación de la escuela 
         /// Trabajamos con el encapsulamiento integrado en c#: {get; set;} (Es el mismo que hacemos con "nombre")
         public Escuela(int anioCreacion, TiposPais pais, TiposCiudad ciudad, TiposEscuela tipoEscuela) 
