@@ -1,0 +1,22 @@
+@*Trabaja con el modelo de la vista que implementa el control de usuario, del tipo especificado (odelosProyectoEscuela.Asignatura)*@
+@using HolaMundoMVC.Models.ModelosProyectoEscuela.ObjetosBaseEInterfaces
+@* @model List<ObjetoBase>  /: Como recibirá toda clase que herede de ObjetoBase, debe quedar débilmente tipado nuestro UC*@ 
+
+<!--table= table-dark:tema;  table-hover:resaltar por donde pase el mouse -->
+<table class="table table-dark table-hover" >
+   <thead>
+      <tr>
+         <th>Nombre</th>
+         <th>ID</th>
+      </tr>
+   </thead>
+   <tbody>
+      @foreach (var objeto in Model)
+      {
+         <tr>
+            <th>@objeto.Nombre</th>
+            <th>@objeto.Id</th>
+         </tr>
+      }
+   </tbody>
+</table>

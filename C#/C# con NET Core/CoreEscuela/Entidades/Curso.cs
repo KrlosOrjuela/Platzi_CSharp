@@ -4,7 +4,7 @@ namespace CoreEscuela.Entidades
     using System.Collections.Generic;
     using CoreEscuela.Entidades.ClasesPadre;
 
-    public class Curso: EnteSistema
+    public class Curso: EnteSistema, ILugar
     {
         public TiposJornada TiposDeJornada { get; set; }    
 
@@ -13,8 +13,8 @@ namespace CoreEscuela.Entidades
         public List<Alumno> Alumnos { get; set; }
 
         public List<Evaluacion> Evaluaciones { get; set; }
-
+        public string Direccion { get; set ; }
         
-     
+        public string ObservacionesDirecccion { get; set ; }
     }
 }

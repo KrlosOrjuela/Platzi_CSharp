@@ -1,0 +1,71 @@
+﻿@using HolaMundoMVC.Models.ModelosProyectoEscuela
+@using HolaMundoMVC.Models.ModelosProyectoEscuela.Enumeradores
+@model Curso
+
+@{ 
+   ViewData["Title"] = "Formulario para la creación de Cursos";
+   Layout = "_Layout"; 
+}
+
+<!-- asp-validation-summary="All" => Muestra en el contenedor todas la validaciones erroneas del Modelo -->
+<!-- <div asp-validation-summary="All" ></div> -->
+
+@*
+<form method="POST">
+   <div>
+      <label asp-for="Nombre"> </label>
+      <input asp-for="Nombre" />
+   </div>
+   <div>
+      <label asp-for="Dirección"></label>
+      <input asp-for="Dirección" />
+   </div>
+   <div>
+      <label asp-for="Jornada"></label>
+      <!-- Usamos los  HTML Helpers, para mostrar una lista desplegable en la interfaz con los tipo de la enumeración correspondiente -->
+      @Html.DropDownList(
+         "JornadasCursos", /// Nombre de la lista
+         Html.GetEnumSelectList<TiposEntesSistema.TiposJornada>(), /// Enumeración asociada a la lista
+         "Seleccionar Jornada", /// Item por defecto de la lista
+         new {@class = "form-control"} /// Estilo de la lista (usamos una clase de bootstrap)
+      )
+      <br>      
+   </div>
+   <input type="submit">
+</form>
+*@
+
+
+
+@*Aquí en Html.Beginform estamos pasando: el nombre de Vista (Índice), el nombre del Controlador (Inicio) y declaramos formMethod = Post Method.*@
+@using (Html.BeginForm("CrearCurso", "Curso", FormMethod.Post))  
+{   
+   <div>
+      @Html.LabelFor(model => model.Nombre)
+      @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control"})
+      @*Aca muestra el mensaje de error -->*@
+      @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+
+      @*<label asp-for="Nombre"> </label>
+         <input asp-for="Nombre" />*@
+   </div>
+   <div>
+      <label asp-for="Dirección"></label>
+      <input asp-for="Dirección" />
+   </div>
+   <div>
+      <label asp-for="Jornada"></label>
+      <!-- Usamos los  HTML Helpers, para mostrar una lista desplegable en la interfaz con los tipo de la enumeración correspondiente -->
+      @Html.DropDownList(
+         "JornadasCursos", /// Nombre de la lista
+         Html.GetEnumSelectList<TiposEntesSistema.TiposJornada>(), /// Enumeración asociada a la lista
+         "Seleccionar Jornada", /// Item por defecto de la lista
+         new {@class = "form-control"} /// Estilo de la lista (usamos una clase de bootstrap)
+      )
+      <br>      
+   </div>   
+
+   <input type="submit">  
+}  
+
+<p><i>@ViewBag.Fecha</i></p>

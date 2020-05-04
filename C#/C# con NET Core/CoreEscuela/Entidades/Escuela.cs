@@ -3,7 +3,7 @@ namespace CoreEscuela.Entidades
     using System.Collections.Generic;
     using CoreEscuela.Entidades.ClasesPadre;
 
-    public class Escuela: EnteSistema
+    public class Escuela: EnteSistema, ILugar
     {
         /// Obtiene o establece el año de creación de la escuela 
         /// Trabajamos con el encapsulamiento integrado en c#: {get; set;} (Es el mismo que hacemos con "nombre")
@@ -24,6 +24,9 @@ namespace CoreEscuela.Entidades
         public TiposCiudad Ciudad { get; set; }
         public TiposEscuela TipoEscuela { get; set; }
         public List<Curso> Cursos { get; set; }
+        public string Direccion { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        
+        public string ObservacionesDirecccion { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
         /// Constructor Forma 1
         public Escuela(string nombre, int anioCreacion)

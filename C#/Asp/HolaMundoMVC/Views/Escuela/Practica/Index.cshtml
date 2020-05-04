@@ -1,0 +1,25 @@
+﻿<!--En este contexto los objetos son débilmente tapados los que nos permitiría conocer el error solo al momento de su ejecución -->
+<!--Podríamos corregir esto, especificando el tipo de objeto que vamos a usar, así, sería un objeto tipado validado en compilación -->
+<!--Una ventaja de esto es que reduciríamos en un gran numero los errores que encontraría el usuario final -->
+@Model Escuela
+
+<!--
+@{
+    ViewData["Title"] = "Información Escuela";
+    Layout = "_Layout"; 
+    // Layout: Vista Maestra (Views/Shared/_Layout)= 
+    // El contenido de nuestra vista se mostrara donde especifiquemos la sección: @RenderBody()
+}
+-->
+@{ 
+   ViewData["Title"] = "Información Escuela";
+   Layout = "_PlantillaSimple"; 
+}
+
+<!-- Mapeamos los campos del  objeto escuela-->
+<h3>Escuela: @ViewData["Title"]</h3>
+<h4>Nombre: @Model.Nombre</h4>
+<p>Fundada en: <strong>@Model.AnioFundacion</strong></p>
+
+<p><i>@ViewBag.ObjetoDinamico</i></p>
+<p><i>@ViewData["ObjetoDinamico"]</i></p>

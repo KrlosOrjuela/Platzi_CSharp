@@ -22,10 +22,20 @@ namespace CoreEscuela.Entidades
         Otro
     }
 
-      public enum TiposJornada
+    public enum TiposJornada
     {
         Manana,
         Noche,
         Otro
     }
+
+    public enum LlaveDiccionario
+    {
+        Escuela,
+        Curso,
+        Alumno,
+        Asignatura,
+        Evaluación
+    }
+
 }

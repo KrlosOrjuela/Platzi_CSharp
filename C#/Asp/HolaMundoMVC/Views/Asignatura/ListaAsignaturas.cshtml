@@ -1,0 +1,20 @@
+﻿@using HolaMundoMVC.Models.ModelosProyectoEscuela
+@model IEnumerable<Asignatura>
+
+
+@{ 
+   ViewData["Title"] = "Lista de Asignaturas";
+   Layout = "_Layout"; 
+}
+
+<h3>@ViewData["Title"]</h3>
+<strong>Vista parcial:</strong>
+<br>
+
+@foreach (var asignatura in Model)
+{
+   @*Es necesario especificar el modelo del CU, de lo contrario tomaria la lista de la vista*@
+   <partial name="_UCAsignaturaSimple" model="asignatura" />
+}
+
+<p><i>@ViewBag.Fecha</i></p>

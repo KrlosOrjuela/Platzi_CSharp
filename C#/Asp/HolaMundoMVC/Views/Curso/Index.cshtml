@@ -1,0 +1,17 @@
+﻿@using HolaMundoMVC.Models.ModelosProyectoEscuela
+@model Curso
+
+@{ 
+   ViewData["Title"] = "Información Curso";
+   Layout = "_Layout"; 
+}
+
+<h3>@ViewData["Title"]</h3>
+<h3 style="color: green;">@ViewBag.Notificacion</h3>
+<strong>Vista parcial:</strong>
+<br>
+@*Por defecto, trabaja con el modelo especificado en la vista (odelosProyectoEscuela.Asignatura) -->*@
+<partial name="_UCObjetoBase" />
+@*model="@Model.Nombre": Especificamos el modelo con el que trabajara el UC (Es necesario validar el tipo de entidad (si esta configurado) que recibe el UC*@
+
+<p><i>@ViewBag.Fecha</i></p>

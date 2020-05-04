@@ -1,0 +1,23 @@
+﻿@model HolaMundoMVC.Models.ModelosProyectoEscuela.Escuela
+
+@{ 
+   ViewData["Title"] = "Proyecto Escuela";
+   Layout = "_Layout"; 
+}
+
+<h3>Escuela: @ViewData["Title"]</h3>
+<br>
+<p>
+   <strong>Nombre: </strong> @Model.Nombre
+   <br>
+   <strong>Tipo Escuela: </strong> @Model.TipoEscuela
+</p>
+<address style="margin-left: 2%;">
+   <p>
+      Pais: @Model.Pais
+      <br>
+      Ciudad: @Model.Ciudad
+      <br>
+      Dirección: @Model.Direccion 
+   </p>
+</address>
